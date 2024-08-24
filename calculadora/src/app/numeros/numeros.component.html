@@ -1,0 +1,8 @@
+<p>numero 1</p>
+<input type="number"  [value]="numero1" (input)="numero1Change($event)"> <br><br>
+<p>numero 2</p>
+<input type="number"  [value]="numero2" (input)="numero2Change($event)"> <br><br>
+<p>Resultado</p>
+<input type="number" readonly [value]="resultadaso">
+<app-operacion [numero1]="numero1" [numero2]="numero2"
+ (resultadoa)="Resultado($event)" (limpiarNumeros)="limpiarNumeros()"></app-operacion>
